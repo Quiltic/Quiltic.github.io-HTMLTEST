@@ -1,12 +1,35 @@
-<!-- https://quiltic.github.io/Quiltic.github.io-DDConvinence/ -->
+<?php
+$action = $_GET["action"];
+$myText = $_POST["mytext"];
+
+if($action = "save") {
+  $targetFolder = "/path/to/folder";
+  file_put_contents($targetFolder."mytext.txt", $myText);
+}
+?>   
+<html>
+<head>
+ <title>myform</title>
+</head>
+<body>
+  <form action="?action=save" name="myform" method="post">
+    <input type=text name="mytext">
+    <input type="submit" value="save">
+  </form>
+</body>
+</html>
+<!--
 <html>
 <head>
 <script>
+function Rock(){
+  document.getElementById("info").innerHTML = (picked);
+};
 </script>
 </head>
 
 <body>
-<h2>words</h2>
+<h2>Main page</h2>
 <div id= 'Main'>
 
 <p id = "info"> </p>
@@ -20,3 +43,4 @@
 </div>
 </body>
 </html> 
+-->
