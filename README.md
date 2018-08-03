@@ -1,2 +1,2 @@
 # Quiltic.github.io-HTMLTEST
-# https://github.com/Quiltic/Quiltic.github.io-HTMLTEST.git
+# https://quiltic.github.io/Quiltic.github.io-HTMLTEST/
